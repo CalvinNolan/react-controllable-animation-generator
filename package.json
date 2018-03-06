@@ -1,0 +1,21 @@
+{
+  "name": "react-controllable-animation-generator",
+  "version": "0.0.1",
+  "description": "Generator to create valid spritesheets with their description language from gifs for react-controllable-animations",
+  "dependencies": {
+    "gif-frames": "^0.4.0",
+    "jquery": "^3.3.1",
+    "react": "^16.2.0",
+    "react-controllable-animation": "0.0.1",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
