@@ -85,7 +85,7 @@ class AnimationSidebar extends Component {
     const { animationData } = this.props;
     if (selectedNew) {
       return (
-        <div className="expanedItem">
+        <div className="expandedItem">
           <AnimationForm 
             onAnimationDataReady={this.onAnimationSubmit}
             newAnimation={true} 
@@ -97,7 +97,7 @@ class AnimationSidebar extends Component {
     }
 
     return (
-      <div  className="expanedItem">
+      <div  className="expandedItem">
         <AnimationForm 
           onAnimationDataReady={this.onAnimationSubmit} 
           removeAnimation={this.onAnimationRemove}

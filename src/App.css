@@ -5,35 +5,41 @@
 }
 
 .animationGenerator {
-  width: 70%;
+  width: 75%;
   height: 100%;
   background-color: #b7ccff;
   float: left;
 }
 
 .animationSidebar {
-  width: 30%;
+  width: 25%;
   height: 100%;
   background-color: #6184de;
   float: right;
 }
 
+.expandedItem {
+  overflow-y: scroll;
+  height: calc(100vh - 263px);
+}
+
 .outerSidebarItems {
-  height: calc(100vh - 219px);
+  height: calc(100vh - 188px);
   overflow-x: visible;
 }
 
 .innerSidebarItems {
-  height: calc(100vh - 219px);
-  width: 31vw;
+  height: calc(100vh - 188px);
+  width: 26vw;
   margin-left: -1vw;
   overflow-y: scroll;
+  overflow-x: hidden
 }
 
 .sidebarItem {
   margin-left: 1vw;
-  width: 30vw;
-  height: 80px;
+  width: 25vw;
+  height: 70px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s ease;
@@ -51,8 +57,9 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.26);
   background-color: rgb(224, 231, 248);
   transform: scale(1.01);
-  margin-right: 3px;
-  margin-left: 0;
+  width: calc(25vw - 2px);
+  margin-left: 0px;
+  margin-top: 15px;
   cursor: default;
 }
 
@@ -67,7 +74,8 @@
 .sidebarItem h2 {
   padding-left: 20px;
   font-family: "Crimson Text", serif;
-  line-height: 80px;
+  line-height: 70px;
+  font-size: 18px;
   letter-spacing: 3px;
   font-weight: 400;
   margin-top: 5px;
@@ -75,27 +83,29 @@
 }
 
 .animationForm {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .formInput {
-  height: 100px;
+  height: 75px;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .fileFormInput {
-  height: 100px;
+  height: 75px;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .formInput input {
-  width: calc(100% - 85px);
-  height: 26px;
+  width: calc(25vw - 82px);
+  height: 22px;
   border: 1px solid rgba(205, 83, 96, 0);
   font-family: 'Open Sans', sans-serif;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 2px;
-  font-size: 13px;
+  border-radius: 1px;
+  font-size: 12px;
   letter-spacing: 2px;
   padding-left: 10px;
   padding-right: 10px;
@@ -114,21 +124,24 @@
 
 .formInput input.formInputError {
   border: 1px solid rgb(205, 83, 96);
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .inputErrorDescription {
   font-family: "Open Sans", sans-serif;
   color: rgb(178, 8, 33);
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 
 .formLabel {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 .formSublabel {
@@ -143,19 +156,19 @@
 
 .fileInputButton p {
   display: inline;
-  margin-left: 20px;
+  margin-left: 5%;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 10px;
   font-variant-ligatures: none;
 }
 
 .fileInputButton input {
-  width: 120px;
-  height: 36px;
+  width: 100px;
+  height: 30px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
   font-variant-ligatures: none;
   border: 1px solid rgba(205, 83, 96, 0);
   background-color: rgba(255, 255, 255, 0.8);
@@ -176,13 +189,15 @@
 
 .formButtons {
   margin-left: 25px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: calc(25vw - 50px);
 }
 
 .formSubmit, .formCancel, .formRemove {
   display: inline-block;
-  margin-top: 50px;
-  width: 40%;
-  height: 40px;
+  width: 48%;
+  height: 32px;
   border: none;
   text-align: center;
 
@@ -190,8 +205,12 @@
   letter-spacing: 3px;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 38px;
+  font-size: 12px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s ease;
@@ -205,7 +224,7 @@
 
 .formSubmit {
   background-color: rgba(255, 255, 255, 0.6);
-  margin-right: calc(20% - 50px);
+  margin-right: 4%;
 }
 
 .formSubmit:hover {
@@ -221,9 +240,10 @@
 }
 
 .formRemove {
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
   margin-left: 25px;
-  width: calc(100% - 75px);
+  width: calc(100% - 50px);
   background-color: rgba(205, 83, 96, 0.8);
 }
 
@@ -356,17 +376,18 @@
 }
 
 .animationOverallForm {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .controllableAnimationNameInput, .controllableAnimationDefaultFrameInput {
-  width: calc(100% - 30px);
-  height: 100px;
-  margin-left: 30px;
+  width: calc(25vw - 30px);
+  height: 80px;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
-.controllableAnimationDefaultFrameInput { 
-  height: 95px;
+.controllableAnimationDefaultFrameInput {
+  height: 70px;
 }
 
 .controllableAnimationNameInput p.inputErrorDescription, .controllableAnimationDefaultFrameInput p.inputErrorDescription {
@@ -377,7 +398,8 @@
   font-family: "Open Sans", sans-serif;  
   letter-spacing: 2px;
   font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 6px;
   margin-top: 0;
   font-weight: 400;
 }
@@ -387,13 +409,13 @@
 }
 
 .animationOverallForm input {
-  width: calc(100% - 85px);
+  width: calc(25vw - 52px);
   height: 26px;
   border: 1px solid rgba(205, 83, 96, 0);
   font-family: 'Open Sans', sans-serif;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   padding-left: 10px;
   padding-right: 10px;

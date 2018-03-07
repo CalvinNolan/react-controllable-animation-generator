@@ -25,17 +25,17 @@ class App extends Component {
     const { controllableAnimationName, controllableAnimationDefaultFrame } = this.state;
     if (controllableAnimationName === '') {
       this.setState({
-        controllableNameError: "Controllable animation name cannot be empty"
+        controllableNameError: "Title cannot be empty"
       });
     }
 
     if (controllableAnimationDefaultFrame === '') {
       this.setState({
-        controllableDefaultFrameError: "Default frame cannot be empty"
+        controllableDefaultFrameError: "Frame cannot be empty"
       });
     } else if (controllableAnimationDefaultFrame < 1) {
       this.setState({
-        controllableDefaultFrameError: "Default frame must be set above 0"
+        controllableDefaultFrameError: "Frame must be set above 0"
       });
     }
 
