@@ -19,7 +19,7 @@
 }
 
 .expandedItem {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: calc(100vh - 263px);
 }
 
