@@ -1,3 +1,5 @@
+![react-controllable-animation-generator logo](https://raw.githubusercontent.com/CalvinNolan/react-controllable-animation/master/react-controllable-animation-logo.png) 
+
 # react-controllable-animation-generator
 
 [www.react-controllable-animation.com](http://www.react-controllable-animation.com)
